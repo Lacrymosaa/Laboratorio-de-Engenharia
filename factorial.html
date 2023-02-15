@@ -5,25 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script language=“JavaScript" type="text/JavaScript">
+    <script language="JavaScript" type="text/JavaScript">
         function factorialize(num) {
-        if (num < 0){
-            return -1;
-        } else if(num == 0){
-            return 1;
-        } else {
-            return (num * factorialize(num - 1));
-        }
+            if (num < 0){
+                return -1;
+            } else if(num == 0){
+                return 1;
+            } else {
+                return (num * factorialize(num - 1));
+            }
         }
         
         while(true) {
-        let dado = prompt("Digite um numero para ser fatorado: ");
+        let dado = prompt("Digite um numero positivo: ");
             if(Number(dado) || dado > 0){
                 alert(factorialize(dado))
-                } else{
-                    alert("Impar")
-                }
-            else if(dado == "True" || dado == "False"){
+            }   else if(dado == "True" || dado == "False"){
                     alert("Digite um numero")
             }   else if(dado.length == 0){
                     alert("Digite um numero")
@@ -32,7 +29,7 @@
             }   else{
                     alert("Digite um numero")
             }
-        }
+        }  
         
         
        </script>
