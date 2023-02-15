@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script language=“JavaScript" type="text/JavaScript">
+        function factorialize(num) {
+        if (num < 0){
+            return -1;
+        } else if(num == 0){
+            return 1;
+        } else {
+            return (num * factorialize(num - 1));
+        }
+        }
+        
+        while(true) {
+        let dado = prompt("Digite um numero para ser fatorado: ");
+            if(Number(dado) || dado > 0){
+                alert(factorialize(dado))
+                } else{
+                    alert("Impar")
+                }
+            else if(dado == "True" || dado == "False"){
+                    alert("Digite um numero")
+            }   else if(dado.length == 0){
+                    alert("Digite um numero")
+            }   else if(Number(dado) || dado <= 0){
+                    alert("Digite um numero positivo")
+            }   else{
+                    alert("Digite um numero")
+            }
+        }
+        
+        
+       </script>
+    <noscript>
+        ERRO: Seu Navegador não suporta JavaScript ou está com a execução de script bloqueada.
+    </noscript>
+    
+</head>
+<body>
+
+</body>
+</html>
