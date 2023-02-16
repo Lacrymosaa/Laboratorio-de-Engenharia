@@ -14,11 +14,14 @@
         while(true) {
         let dado = prompt("Digite um numero positivo: ");
             if(Number(dado) && dado > 0){
-                if(isPar(dado) == false){
-                    alert("Par")
-                } else{
-                    alert("Impar")
-                }
+                var x = parseInt(dado);
+                if(Number.isInteger(x) == true){
+                    if(isPar(x) == false){
+                        alert("Par")
+                    } else{
+                        alert("Impar")
+                    }
+                }  
             }   else if(Number(dado) || dado <= 0){
                     alert("Digite um numero positivo")
             }   else{

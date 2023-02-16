@@ -19,7 +19,10 @@
         while(true) {
         let dado = prompt("Digite um numero positivo: ");
             if(Number(dado) && dado > 0){
-                alert(factorialize(dado))
+                var x = parseInt(dado);
+                if(Number.isInteger(x) == true){
+                    alert(factorialize(x))
+                }            
             }   else if(Number(dado) || dado <= 0){
                     alert("Digite um numero positivo")
             }   else{
