@@ -18,12 +18,8 @@
         
         while(true) {
         let dado = prompt("Digite um numero positivo: ");
-            if(Number(dado) || dado > 0){
+            if(Number(dado) && dado > 0){
                 alert(factorialize(dado))
-            }   else if(dado == "True" || dado == "False"){
-                    alert("Digite um numero")
-            }   else if(dado.length == 0){
-                    alert("Digite um numero")
             }   else if(Number(dado) || dado <= 0){
                     alert("Digite um numero positivo")
             }   else{
