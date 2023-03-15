@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="palindromo.js"></script>
+    <noscript>
+        ERRO: Seu Navegador não suporta JavaScript ou está com a execução de script bloqueada.
+    </noscript>
+    
+</head>
+<body>
+    <script>
+        const frase = prompt('Digite uma frase: ');
+        if (frase.length > 0) {
+            const y = +frase;
+            if (palindromo(frase)) {
+                alert('Essa frase é um palíndromo! 😃');
+            } else {
+                alert('Essa frase não é uma palíndromo! 🙁');
+            }
+        }
+    </script>
+</body>
+</html>
