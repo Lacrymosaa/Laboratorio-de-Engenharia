@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de cadastro</title>
+</head>
+<body>
+
+  <h1>Formulário de cadastro</h1>
+
+  <form onkeypress="if (event.keyCode == 13) adicionarPessoa()">
+    <label>
+      <input type="radio" name="tipo" value="aluno" onchange="mostrarCampos()"> Aluno
+    </label>
+    <label>
+      <input type="radio" name="tipo" value="professor" onchange="mostrarCampos()"> Professor
+    </label>
+    <br><br>
+
+    <label>Nome:
+      <input type="text" name="nome">
+    </label>
+    <br><br>
+
+    <label>E-mail:
+      <input type="email" name="email">
+    </label>
+    <br><br>
+
+    <label>Data de nascimento:
+      <input type="date" name="dataNascimento">
+    </label>
+    <br><br>
+
+    <label>Telefone fixo:
+      <input type="tel" name="telefoneFixo">
+    </label>
+    <br><br>
+
+    <label>Celular:
+      <input type="tel" name="celular">
+    </label>
+    <br><br>
+
+    <div id="campoMatricula">
+      <label>Matrícula:
+        <input type="text" name="matricula">
+      </label>
+      <br><br>
+    </div>
+
+    <div id="campoCurso" style="display: none">
+      <label>Curso:
+        <input type="text" name="curso">
+      </label>
+      <br><br>
+    </div>
+
+    <div id="campoAreaAtuacao" style="display: none">
+      <label>Área de atuação:
+        <input type="text" name="areaAtuacao">
+      </label>
+      <br><br>
+
+      <label>Endereço Lattes:
+        <input type="url" name="enderecoLattes">
+      </label>
+      <br><br>
+    </div>
+
+    <button type="button" onclick="adicionarPessoa()">Adicionar</button>
+  </form>
+
+  <script src="formularioH.js"></script>
+  <div id="informacoes"></div>
+
+
+</body>
+</html>

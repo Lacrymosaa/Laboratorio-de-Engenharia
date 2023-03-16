@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lista de Tarefas</title>
+</head>
+<body>
+	<h1>Lista de Tarefas</h1>
+    <input type="text" id="taskInput" onkeydown="if(event.keyCode === 13) addTask()">
+    <button onclick="addTask()">Adicionar Tarefa</button>
+	<ul id="taskList"></ul>
+
+	<script src="todo.js"></script>
+</body>
+</html>
