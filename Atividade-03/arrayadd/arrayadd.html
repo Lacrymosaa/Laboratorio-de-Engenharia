@@ -8,44 +8,13 @@
 </head>
 <body>
 	<h2>Array Dinâmico</h2>
-	<form>
+	<form onkeypress="if (event.keyCode == 13) adicionarValor()">
 		<label for="valor">Digite um valor:</label>
 		<input type="text" id="valor" name="valor">
 		<button type="button" onclick="adicionarValor()">Adicionar</button>
 	</form>
 	<h3>Valores cadastrados:</h3>
 	<ol id="lista"></ol>
-	<script>
-        let valores = [];
-
-        function adicionarValor() {
-            let valorInput = document.getElementById('valor');
-            let valor = valorInput.value.trim();
-        
-            if(valor !== '') {
-                valores.push(valor);
-                valorInput.value = '';
-                exibirValores();
-            }
-        }
-        
-        function exibirValores() {
-            let lista = document.getElementById('lista');
-            lista.innerHTML = '';
-        
-            if(valores.length > 0) {
-                valores.sort();
-                valores.forEach(function(valor) {
-                    let item = document.createElement('li');
-                    item.innerText = valor;
-                    lista.appendChild(item);
-                });
-            } else {
-                let item = document.createElement('li');
-                item.innerText = 'Nenhum valor cadastrado';
-                lista.appendChild(item);
-            }
-        }
-        </script>
+	<script src="arrayadd.js"></script>
 </body>
 </html>
